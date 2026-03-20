@@ -1,0 +1,12 @@
+[project]
+name = "awscli-simple-app-deploy"
+version = "1.0.0"
+description = "Todo App Backend with FastAPI"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "sqlalchemy>=2.0.25",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+]

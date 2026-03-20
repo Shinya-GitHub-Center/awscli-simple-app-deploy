@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🏷 Todo App</h1>
+            <p class="subtitle">シンプルなタスク管理アプリ</p>
+        </header>
+
+        <main>
+            <!-- Todo入力フォーム -->
+            <section class="input-section">
+                <div class="input-group">
+                    <input type="text" id="todoTitle" placeholder="新しいタスクを入力..." maxlength="255" autocomplete="off">
+                    <button id="addBtn" class="btn btn-primary">追加</button>
+                </div>
+                <div class="input-group">
+                    <textarea id="todoDescription" placeholder="詳細説明（オプション）" rows="2" maxlength="1000"></textarea>
+                </div>
+            </section>
+
+            <!-- フィルター -->
+            <section class="filter-section">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">全て</button>
+                    <button class="filter-btn" data-filter="active">未完了</button>
+                    <button class="filter-btn" data-filter="completed">完了</button>
+                </div>
+                <div class="stats">
+                    <span id="todoCount">0</span> 件のタスク
+                </div>
+            </section>
+
+            <!-- Todo リスト -->
+            <section class="todo-list" id="todoList">
+                <div class="loading" id="loading">読み込み中...</div>
+                <div class="empty-state" id="emptyState" style="display: none;">
+                    <p>📭 タスクがありません</p>
+                    <p class="empty-subtitle">新しいタスクを追加してみましょう！</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by FastAPI + MySQL + App Runner</p>
+        </footer>
+    </div>
+</body>
+
+</html>
