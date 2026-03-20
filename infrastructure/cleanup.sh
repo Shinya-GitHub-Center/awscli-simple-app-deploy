@@ -4,6 +4,7 @@
 
 set -e
 
+# あなたが作成したプロジェクト名に変更してください
 PRJ_NAME="myhappytodoapp"
 REGION="ap-northeast-1"
 

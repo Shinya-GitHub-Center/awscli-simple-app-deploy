@@ -6,6 +6,7 @@
 set -e
 
 # 設定変数
+# プロジェクト名はデフォルト値から変更することを推奨
 PRJ_NAME="myhappytodoapp"
 SERVICE_NAME="${PRJ_NAME}-backend"
 REGION="ap-northeast-1"

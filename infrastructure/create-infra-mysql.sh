@@ -5,6 +5,7 @@
 set -e
 
 # 基本インフラ構築用設定変数
+# プロジェクト名はデフォルト値から変更することを推奨
 VPC_CIDR="10.77.0.0/16"
 PRJ_NAME="myhappytodoapp"
 SUBNET_1_CIDR="10.77.10.0/24"

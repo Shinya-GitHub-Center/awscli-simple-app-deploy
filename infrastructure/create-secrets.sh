@@ -9,6 +9,7 @@ echo "🔐 AWS Secrets Managerにシークレットを保存"
 echo "========================================="
 echo ""
 
+# プロジェクト名はデフォルト値から変更することを推奨
 PRJ_NAME="myhappytodoapp"
 REGION="ap-northeast-1"
 SECRET_NAME="${PRJ_NAME}/db-credentials"

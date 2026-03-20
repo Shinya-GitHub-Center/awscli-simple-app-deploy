@@ -5,6 +5,7 @@
 set -e
 
 # 設定変数
+# プロジェクト名はデフォルト値から変更することを推奨
 PRJ_NAME="myhappytodoapp"
 BUCKET_NAME="${PRJ_NAME}-frontend"
 REGION="ap-northeast-1"
